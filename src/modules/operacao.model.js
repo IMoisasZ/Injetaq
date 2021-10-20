@@ -1,5 +1,4 @@
 import Sequelize from 'sequelize'
-import sequelize from '../connections/db.connection.js'
 import db from '../connections/db.connection.js'
 
 const Operacao = db.define('operacao', {
