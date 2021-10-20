@@ -32,7 +32,7 @@ async function buscaDi(di){
 
 async function buscaTodasDi(){
     try {
-        return await findAll()
+        return await DiModulo.findAll()
     } catch (error) {
         throw error
     }
