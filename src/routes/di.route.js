@@ -7,6 +7,7 @@ router.post('/', DiController.criarDi)
 router.put('/', DiController.alterarDi)
 router.get('/:di', DiController.buscaDi)
 router.get('/', DiController.buscaTodasDi)
-router.get('/?situcao_id', DiController.buscaTodasDi)
+router.get('/situacao/:situacao_id', DiController.buscaDiPorSituacao)
+router.get('/tipo/:tipo_di_id', DiController.buscaDiPorTipo)
 
 export default router

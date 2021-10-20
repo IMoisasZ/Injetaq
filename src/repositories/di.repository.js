@@ -50,10 +50,23 @@ async function buscaDiPorSituacao(situacao_id){
     }
 }
 
+async function buscaDiPorTipo(tipo_di_id){
+    try {
+        return await DiModulo.findAll({
+            where:{
+                tipo_di_id
+            }
+        })
+    } catch (error) {
+        throw error
+    }
+}
+
 export default {
     criarDi,
     alterarDi,
     buscaDi,
     buscaTodasDi,
-    buscaDiPorSituacao
+    buscaDiPorSituacao,
+    buscaDiPorTipo
 }

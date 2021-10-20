@@ -41,10 +41,7 @@ async function buscaDi(di){
     return await DiRepository.buscaDi(di)
 }
 
-async function buscaTodasDi(situacao_id){
-    if(situacao_id){
-        return await DiRepository.buscaDiPorSituacao(situacao_id)
-    }
+async function buscaTodasDi(){
     return await DiRepository.buscaTodasDi()
 }
 
@@ -52,10 +49,15 @@ async function buscaDiPorSituacao(situacao_id){
     return await DiRepository.buscaDiPorSituacao(situacao_id)
 }
 
+async function buscaDiPorTipo(tipo_di_id){
+    return await DiRepository.buscaDiPorTipo(tipo_di_id)
+}
+
 export default {
     criarDi,
     alterarDi,
     buscaDi,
     buscaTodasDi,
-    buscaDiPorSituacao
+    buscaDiPorSituacao,
+    buscaDiPorTipo
 }

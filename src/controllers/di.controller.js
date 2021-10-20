@@ -37,12 +37,26 @@ async function buscaDi(req, res, next){
 
 async function buscaTodasDi(req, res, next){
     try {
-        if(req.query.situacao_id){
-            res.send(await DiService.buscaTodasDi(req.query.situacao_id))
-            logger.info(`GET /di/?situacao_id=${req.query.situcacao_id}`)
-        }
         res.send(await DiService.buscaTodasDi())
-            logger.info(`GET /di`)
+        logger.info(`GET /di`)
+    } catch (error) {
+        next(error)
+    }
+}
+
+async function buscaDiPorSituacao(req, res, next){
+    try {
+        res.send(await DiService.buscaDiPorSituacao(req.params.situacao_id))
+        logger.info(`GET /di/:situcao_id - ${req.params.situacao_id}`)
+    } catch (error) {
+        next(error)
+    }
+}
+
+async function buscaDiPorTipo(req, res, next){
+    try {
+        res.send(await DiService.buscaDiPorTipo(req.params.tipo_di_id))
+        logger.info(`GET /di/:tipo_di_id - ${req.params.tipo_di_id}`)
     } catch (error) {
         next(error)
     }
@@ -52,5 +66,7 @@ export default {
     criarDi,
     alterarDi,
     buscaDi,
-    buscaTodasDi
+    buscaTodasDi,
+    buscaDiPorSituacao,
+    buscaDiPorTipo
 }
