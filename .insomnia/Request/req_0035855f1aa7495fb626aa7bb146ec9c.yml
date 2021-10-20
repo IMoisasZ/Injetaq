@@ -1,0 +1,45 @@
+_id: req_0035855f1aa7495fb626aa7bb146ec9c
+type: Request
+parentId: fld_4b10d7cdbb0f4b50941253e4deadfc92
+modified: 1634750370211
+created: 1634749950183
+url: http://localhost:3000/di
+name: /di
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"di": 4523,
+    	"os": "",
+    	"numero_pedido": "21971529",
+    	"numero_orcamento": "",
+    	"descricao": "REPUXAR",
+    	"numero": "376001",
+    	"op": "20",
+    	"nome_peca": "ESTERNO PORTELONE INFERIORE",
+    	"numero_peca": "",
+    	"cliente_id": 2,
+    	"inicio": "2020/10/26",
+    	"prazo": "2021/12/10",
+    	"andamento": "",
+    	"data_atualizacao": "",
+    	"tipo_di_id": 1,
+    	"situacao_id": 1,
+    	"entrega": ""
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3c292ecf39ba4e319b309313274ff4ae
+authentication: {}
+metaSortKey: -1634749950183
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
