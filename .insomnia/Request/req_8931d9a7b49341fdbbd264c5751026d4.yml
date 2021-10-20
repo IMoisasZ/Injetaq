@@ -1,0 +1,31 @@
+_id: req_8931d9a7b49341fdbbd264c5751026d4
+type: Request
+parentId: fld_4a9241e7e6e94e12b640bca786573f9f
+modified: 1634656658433
+created: 1634656640734
+url: http://localhost:3000/setor
+name: /setor
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"setor_id": 7,
+    	"nome": "injeção de plásticos",
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_b0775d8b752847da9ddf1486569d1146
+authentication: {}
+metaSortKey: -1634651985686.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_f796af062e184eab88165a118dca24f4
+type: Request
+parentId: fld_ee8e3e133f834c209560a24746a6ae00
+modified: 1634740914219
+created: 1634740835556
+url: http://localhost:3000/operacao
+name: /operacao
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"operacao_id": 2,
+    	"descricao": "simulação",
+    	"custo_operacao": 110.00,
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3ea4fc01177d4e6e8f123c66bbe9a2c5
+authentication: {}
+metaSortKey: -1634734907924
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

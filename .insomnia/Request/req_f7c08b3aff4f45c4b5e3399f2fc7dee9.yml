@@ -1,0 +1,30 @@
+_id: req_f7c08b3aff4f45c4b5e3399f2fc7dee9
+type: Request
+parentId: fld_ee8e3e133f834c209560a24746a6ae00
+modified: 1634741047269
+created: 1634741004380
+url: http://localhost:3000/operacao/alterar-status-operacao
+name: /operacao/alterar-status-operacao
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"operacao_id": 1,
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_70fd92d42ff04aec94881b8cb7d849ad
+authentication: {}
+metaSortKey: -1634730019612.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

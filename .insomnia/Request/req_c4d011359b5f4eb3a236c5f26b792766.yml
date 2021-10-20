@@ -1,0 +1,30 @@
+_id: req_c4d011359b5f4eb3a236c5f26b792766
+type: Request
+parentId: fld_01c779e718a04d6f809814f29bc49ff3
+modified: 1634669731489
+created: 1634669511464
+url: http://localhost:3000/situacao
+name: /situacao
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"nome": "cancelada",
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1edbec3dd2024b88ab9c96f0c23e0204
+authentication: {}
+metaSortKey: -1634669511465
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

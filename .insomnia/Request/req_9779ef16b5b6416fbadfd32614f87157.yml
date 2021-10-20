@@ -1,0 +1,31 @@
+_id: req_9779ef16b5b6416fbadfd32614f87157
+type: Request
+parentId: fld_ee8e3e133f834c209560a24746a6ae00
+modified: 1634740796233
+created: 1634740494566
+url: http://localhost:3000/operacao
+name: /operacao
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"descricao": "try out",
+    	"custo_operacao": 285.00,
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3ea4fc01177d4e6e8f123c66bbe9a2c5
+authentication: {}
+metaSortKey: -1634740494566
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

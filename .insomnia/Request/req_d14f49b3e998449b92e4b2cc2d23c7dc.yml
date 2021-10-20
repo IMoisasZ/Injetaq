@@ -1,0 +1,30 @@
+_id: req_d14f49b3e998449b92e4b2cc2d23c7dc
+type: Request
+parentId: fld_01c779e718a04d6f809814f29bc49ff3
+modified: 1634669909895
+created: 1634669821347
+url: http://localhost:3000/situacao/alterar-status-situacao
+name: /situacao/alterar-status-situacao
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"situacao_id": 3,
+    	"ativo": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2d28579ea9994879b606a5ff6a39a19d
+authentication: {}
+metaSortKey: -1634662524040.3125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

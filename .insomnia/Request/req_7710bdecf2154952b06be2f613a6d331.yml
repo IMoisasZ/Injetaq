@@ -1,0 +1,30 @@
+_id: req_7710bdecf2154952b06be2f613a6d331
+type: Request
+parentId: fld_aafaf29b544e4f77875325c2eac6d062
+modified: 1634658863952
+created: 1634654412901
+url: http://localhost:3000/cliente/desativar
+name: /cliente/desativar
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"cliente_id": 3,
+    	"ativo": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ee977e1ae1ae4b5d9b35522c1dd2ee5e
+authentication: {}
+metaSortKey: -1633612311291.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

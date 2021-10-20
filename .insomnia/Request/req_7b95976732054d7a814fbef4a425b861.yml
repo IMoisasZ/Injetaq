@@ -1,0 +1,30 @@
+_id: req_7b95976732054d7a814fbef4a425b861
+type: Request
+parentId: fld_ce305c7e491a4bb7abd15b5f13d6f841
+modified: 1634729815019
+created: 1634729321282
+url: http://localhost:3000/tipo_di
+name: /tipo_di
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"descricao": "serviço",
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_945071d0f19e422bb7a2b9da30464b99
+authentication: {}
+metaSortKey: -1634729321282
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

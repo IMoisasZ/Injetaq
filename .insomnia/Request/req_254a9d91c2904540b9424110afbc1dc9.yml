@@ -1,0 +1,30 @@
+_id: req_254a9d91c2904540b9424110afbc1dc9
+type: Request
+parentId: fld_4a9241e7e6e94e12b640bca786573f9f
+modified: 1634658716437
+created: 1634656735223
+url: http://localhost:3000/setor/desativar
+name: /setor/desativar
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"setor_id": 7,
+    	"ativo": false
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_db5fc7f469844218be862043628f6628
+authentication: {}
+metaSortKey: -1634648554563.4375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

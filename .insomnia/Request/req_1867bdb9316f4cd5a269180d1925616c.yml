@@ -1,0 +1,35 @@
+_id: req_1867bdb9316f4cd5a269180d1925616c
+type: Request
+parentId: fld_9cbc9d93b41d4d6da5aa8532190dbd6d
+modified: 1634666392351
+created: 1634662684985
+url: http://localhost:3000/usuario
+name: /usuario
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"usuario_id": 1,
+    	"nome": "Moises",
+    	"email":"moises@destaq.com.br",
+    	"senha":"d16m09mb",
+    	"confirmar_senha": "d16m09mb",
+    	"setor_id":1,
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ddbb64e696f9413aa031d710ad8e15c2
+authentication: {}
+metaSortKey: -1634658982591
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

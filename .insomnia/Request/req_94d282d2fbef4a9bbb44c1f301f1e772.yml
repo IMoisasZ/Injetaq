@@ -1,0 +1,31 @@
+_id: req_94d282d2fbef4a9bbb44c1f301f1e772
+type: Request
+parentId: fld_01c779e718a04d6f809814f29bc49ff3
+modified: 1634669765007
+created: 1634669738502
+url: http://localhost:3000/situacao
+name: /situacao
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"situacao_id": 1,
+    	"nome": "em execução",
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1edbec3dd2024b88ab9c96f0c23e0204
+authentication: {}
+metaSortKey: -1634665784838.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

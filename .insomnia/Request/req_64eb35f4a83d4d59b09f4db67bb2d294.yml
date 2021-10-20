@@ -1,0 +1,30 @@
+_id: req_64eb35f4a83d4d59b09f4db67bb2d294
+type: Request
+parentId: fld_9cbc9d93b41d4d6da5aa8532190dbd6d
+modified: 1634667144588
+created: 1634662769342
+url: http://localhost:3000/usuario/alterar-status-usuario
+name: /usuario/alterar-status-usuario
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"usuario_id": 1,
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ddbb64e696f9413aa031d710ad8e15c2
+authentication: {}
+metaSortKey: -1634656675825.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,30 @@
+_id: req_9fa103975d02457e8a1fb8046297f29a
+type: Request
+parentId: fld_ce305c7e491a4bb7abd15b5f13d6f841
+modified: 1634729854424
+created: 1634729752016
+url: http://localhost:3000/tipo_di/alterar-status-tipo_di
+name: /tipo_di/alterar-status-tipo_di
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tipo_di_id": 2,
+    	"ativo": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_237cc19bdd474f668e40283d5d45642d
+authentication: {}
+metaSortKey: -1634673249578.5625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
