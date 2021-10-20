@@ -37,8 +37,12 @@ async function buscaDi(req, res, next){
 
 async function buscaTodasDi(req, res, next){
     try {
+        if(req.query.situacao_id){
+            res.send(await DiService.buscaTodasDi(req.query.situacao_id))
+            logger.info(`GET /di/?situacao_id=${req.query.situcacao_id}`)
+        }
         res.send(await DiService.buscaTodasDi())
-        logger.info(`GET /di`)
+            logger.info(`GET /di`)
     } catch (error) {
         next(error)
     }

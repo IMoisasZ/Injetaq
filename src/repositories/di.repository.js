@@ -38,9 +38,22 @@ async function buscaTodasDi(){
     }
 }
 
+async function buscaDiPorSituacao(situacao_id){
+    try {
+        return await DiModulo.findAll({
+            where:{
+                situacao_id
+            }
+        })
+    } catch (error) {
+        throw error
+    }
+}
+
 export default {
     criarDi,
     alterarDi,
     buscaDi,
-    buscaTodasDi
+    buscaTodasDi,
+    buscaDiPorSituacao
 }

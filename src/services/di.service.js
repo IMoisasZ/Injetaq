@@ -1,3 +1,4 @@
+import Situacao from '../modules/situacao.model.js'
 import DiRepository from '../repositories/di.repository.js'
 
 async function criarDi(dadosDi){
@@ -40,13 +41,21 @@ async function buscaDi(di){
     return await DiRepository.buscaDi(di)
 }
 
-async function buscaTodasDi(){
+async function buscaTodasDi(situacao_id){
+    if(situacao_id){
+        return await DiRepository.buscaDiPorSituacao(situacao_id)
+    }
     return await DiRepository.buscaTodasDi()
+}
+
+async function buscaDiPorSituacao(situacao_id){
+    return await DiRepository.buscaDiPorSituacao(situacao_id)
 }
 
 export default {
     criarDi,
     alterarDi,
     buscaDi,
-    buscaTodasDi
+    buscaTodasDi,
+    buscaDiPorSituacao
 }
