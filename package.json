@@ -1,0 +1,27 @@
+{
+  "name": "controlre_ordens_producao",
+  "version": "1.0.0",
+  "description": "Controle de produção DI",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon ./wwww.bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMoisasZ/injetaq.git"
+  },
+  "author": "moisas",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.7.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "install": "^0.13.0"
+  }
+}
