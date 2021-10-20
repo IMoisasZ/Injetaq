@@ -18,7 +18,7 @@ const DI = db.define('di', {
         type: Sequelize.STRING,
         allowNull: true
     },
-    numero_Pedido:{
+    numero_pedido:{
         type: Sequelize.STRING,
         allowNull: false
     },
@@ -48,11 +48,11 @@ const DI = db.define('di', {
     },
     inicio: {
         type: Sequelize.DATE,
-        allowNull: true
+        allowNull: false
     },
     prazo: {
         type: Sequelize.DATE,
-        allowNull:true
+        allowNull:false
     },
     andamento: {
         type: Sequelize.NUMBER,
