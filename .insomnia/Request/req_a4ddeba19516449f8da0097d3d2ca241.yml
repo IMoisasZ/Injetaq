@@ -1,7 +1,7 @@
 _id: req_a4ddeba19516449f8da0097d3d2ca241
 type: Request
 parentId: fld_4b10d7cdbb0f4b50941253e4deadfc92
-modified: 1634752357178
+modified: 1634833994598
 created: 1634750536636
 url: http://localhost:3000/di
 name: /di
@@ -11,7 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"di": 4523,
+    	"di_id": 2,
+    	"di": 4524,
     	"os": "",
     	"numero_pedido": "21971529",
     	"numero_orcamento": "",
@@ -19,15 +20,14 @@ body:
     	"numero": "376001",
     	"op": "20",
     	"nome_peca": "ESTERNO PORTELONE INFERIORE",
-    	"numero_peca": "",
     	"cliente_id": 2,
-    	"inicio": "2020/10/26",
-    	"prazo": "2021/12/10",
-    	"andamento": "",
-    	"data_atualizacao": "",
+    	"inicio": "2020-10-26",
+    	"prazo": "2021-12-10",
+    	"andamento": "0",
+    	"data_atualizacao": "0000-00-00",
     	"tipo_di_id": 1,
-    	"situacao_id": 2,
-    	"entrega": ""
+    	"situacao_id": 1,
+    	"entrega": "0000-00-00"
     }
 parameters: []
 headers:
