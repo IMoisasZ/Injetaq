@@ -62,11 +62,25 @@ async function buscaDiPorTipo(req, res, next){
     }
 }
 
+async function copiaDi(req, res, next){
+    try {
+        let {di_copia, nova_di} = req.body
+        if(!di_copia || !nova_di){
+            throw new Error('A DI a ser copia da e a nova DI são obrigatórias!')
+        }
+        res.send(await DiService.copiaDi(di_copia, nova_di))
+        logger.info(`POST /di/copia-di - DI copiada: ${di_copia} - Nova DI ${nova_di}`)
+    } catch (error) {
+        next(error)
+    }
+}
+
 export default {
     criarDi,
     alterarDi,
     buscaDi,
     buscaTodasDi,
     buscaDiPorSituacao,
-    buscaDiPorTipo
+    buscaDiPorTipo,
+    copiaDi
 }

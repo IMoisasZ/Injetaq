@@ -9,5 +9,6 @@ router.get('/:di', DiController.buscaDi)
 router.get('/', DiController.buscaTodasDi)
 router.get('/situacao/:situacao_id', DiController.buscaDiPorSituacao)
 router.get('/tipo/:tipo_di_id', DiController.buscaDiPorTipo)
+router.post('/copia-di', DiController.copiaDi)
 
 export default router

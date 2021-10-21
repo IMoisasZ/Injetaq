@@ -1,4 +1,3 @@
-import Situacao from '../modules/situacao.model.js'
 import DiRepository from '../repositories/di.repository.js'
 
 async function criarDi(dadosDi){
@@ -53,11 +52,24 @@ async function buscaDiPorTipo(tipo_di_id){
     return await DiRepository.buscaDiPorTipo(tipo_di_id)
 }
 
+async function copiaDi(diCopia, novaDi){
+    try {
+        let di = await buscaDi(diCopia)
+        let diValues = di.dataValues
+        diValues.di_id = undefined
+        diValues.di = novaDi
+        return await DiRepository.criarDi(diValues)
+    } catch (error) {
+        throw error
+    }
+}
+
 export default {
     criarDi,
     alterarDi,
     buscaDi,
     buscaTodasDi,
     buscaDiPorSituacao,
-    buscaDiPorTipo
+    buscaDiPorTipo,
+    copiaDi
 }
