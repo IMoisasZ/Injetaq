@@ -1,0 +1,30 @@
+_id: req_d340cac93469445f807d70bef8aa3b57
+type: Request
+parentId: fld_4b10d7cdbb0f4b50941253e4deadfc92
+modified: 1634833298717
+created: 1634832653959
+url: http://localhost:3000/di/copia-di
+name: /di/copia-di
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"di_copia": 4523,
+    	"nova_di": 4524
+    }	
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_02c288dd438f4d6d850a7a43e0e51976
+authentication: {}
+metaSortKey: -1634740642310.0156
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
