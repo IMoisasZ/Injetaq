@@ -1,16 +1,20 @@
 import DiRepository from '../repositories/di.repository.js'
 
+function validarDadosDi(dados){
+        // função para passar as letras dos campos das DI's para Maiusculas!
+        dados.os = dados.os !== "" ? dados.os.toUpperCase() : "" 
+        dados.numero_pedido = dados.os !== "" ? dados.numero_pedido.toUpperCase() : ""
+        dados.numero_orcamento = dados.os !== "" ? dados.numero_orcamento.toUpperCase() : ""
+        dados.descricao = dados.os !== "" ? dados.descricao.toUpperCase() : ""
+        dados.numero = dados.os !== "" ? dados.numero.toUpperCase() : ""
+        dados.op = dados.os !== "" ? dados.op.toUpperCase() : ""
+        dados.nome_peca = dados.os !== "" ? dados.nome_peca.toUpperCase() : ""
+        dados.numero_peca = dados.os !== "" ? dados.numero_peca.toUpperCase() : ""
+}
+
 async function criarDi(dadosDi){
     try {
-        // passando as letras para maiusculas
-        dadosDi.os = dadosDi.os.toUpperCase()
-        dadosDi.numero_pedido = dadosDi.numero_pedido.toUpperCase()
-        dadosDi.numero_orcamento = dadosDi.numero_orcamento.toUpperCase()
-        dadosDi.descricao = dadosDi.descricao.toUpperCase()
-        dadosDi.numero = dadosDi.numero.toUpperCase()
-        dadosDi.op = dadosDi.op.toUpperCase()
-        dadosDi.nome_peca = dadosDi.nome_peca.toUpperCase()
-        dadosDi.numero_peca = dadosDi.numero_peca.toUpperCase()
+        validarDadosDi(dadosDi)
 
         return await DiRepository.criarDi(dadosDi)
     } catch (error) {
@@ -20,15 +24,7 @@ async function criarDi(dadosDi){
 
 async function alterarDi(dadosDi){
     try {
-        // passando as letras para maiusculas
-        dadosDi.os = dadosDi.os.toUpperCase()
-        dadosDi.numero_pedido = dadosDi.numero_pedido.toUpperCase()
-        dadosDi.numero_orcamento = dadosDi.numero_orcamento.toUpperCase()
-        dadosDi.descricao = dadosDi.descricao.toUpperCase()
-        dadosDi.numero = dadosDi.numero.toUpperCase()
-        dadosDi.op = dadosDi.op.toUpperCase()
-        dadosDi.nome_peca = dadosDi.nome_peca.toUpperCase()
-        dadosDi.numero_peca = dadosDi.numero_peca.toUpperCase()
+        validarDadosDi(dadosDi)
 
         return await DiRepository.alterarDi(dadosDi)
     } catch (error) {
