@@ -7,6 +7,7 @@ import SituacaoRoute from './src/routes/situacao.route.js'
 import TipoDiRoute from './src/routes/tipoDi.route.js'
 import OperacaoRoute from './src/routes/operacao.route.js'
 import DiRoute from './src/routes/di.route.js'
+import DiSetorRoute from './src/routes/diSetor.route.js'
 
 const app = express()
 
@@ -40,6 +41,7 @@ app.use('/situacao', SituacaoRoute)
 app.use('/tipo_di', TipoDiRoute)
 app.use('/operacao', OperacaoRoute)
 app.use('/di', DiRoute)
+app.use('/di_setor', DiSetorRoute)
 
 // erro padrão
 app.use((err, req, res, next) => {
