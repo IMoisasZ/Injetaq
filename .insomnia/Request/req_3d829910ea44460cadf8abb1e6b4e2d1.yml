@@ -1,26 +1,26 @@
-_id: req_d340cac93469445f807d70bef8aa3b57
+_id: req_3d829910ea44460cadf8abb1e6b4e2d1
 type: Request
-parentId: fld_31dd0d7fe07e441caf9b1656e87aac51
-modified: 1634916725787
-created: 1634832653959
-url: http://localhost:3000/di/copia-di
-name: /di/copia-di
+parentId: fld_3cb47422c5d74e78b0ea5cabc7309bf8
+modified: 1634917353001
+created: 1634916650576
+url: http://localhost:3000/di_setor
+name: /di_setor
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"di_copia": 4523,
-    	"nova_di": 4524
-    }	
+    	"di": 4523,
+    	"setor_id": 3
+    }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_02c288dd438f4d6d850a7a43e0e51976
+    id: pair_e7b346101b9c43cd819f8e3554d72ab9
 authentication: {}
-metaSortKey: -1634749949883
+metaSortKey: -1634916650576
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

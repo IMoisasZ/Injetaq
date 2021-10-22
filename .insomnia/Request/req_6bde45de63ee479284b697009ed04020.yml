@@ -1,9 +1,9 @@
 _id: req_6bde45de63ee479284b697009ed04020
 type: Request
-parentId: fld_4b10d7cdbb0f4b50941253e4deadfc92
-modified: 1634758804342
+parentId: fld_31dd0d7fe07e441caf9b1656e87aac51
+modified: 1634916722665
 created: 1634752315969
-url: http://localhost:3000/di/situacao/2
+url: http://localhost:3000/di/situacao/1
 name: /di/situacao/:situacao_id
 description: ""
 method: GET
@@ -11,7 +11,7 @@ body: {}
 parameters: []
 headers: []
 authentication: {}
-metaSortKey: -1634741085542.0625
+metaSortKey: -1634749949983
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
